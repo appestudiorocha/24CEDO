@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Security-Policy" content="default-src * gap: ws: https://ssl.gstatic.com;style-src * 'unsafe-inline' 'self' data: blob:;script-src * 'unsafe-inline' 'unsafe-eval' data: blob:;img-src * data: 'unsafe-inline' 'self' content:;">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/jasny-bootstrap.min.css" media="screen">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/jquery.min.js"></script>
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="expires" content="-1">
+</head>
+
+<body>       
+ <div id="page" class="login" style="background: url('img/bkg-login.jpg') no-repeat center top/cover">
+  <img src="img/logo-login.png" width="100%" /><br/><br/><br/>
+  <form method="get" id="loginForm" class="col-md-12">
+    <div class="mensajeLogin alert alert-danger"></div>
+    <div class="item-input">
+      <input type="email" name="email" class="form-control" placeholder="Email" /><br/>
+    </div>
+    <div class="item-input">
+      <input type="password" name="password" class="form-control" placeholder="Contraseña" /><br/>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 col-xs-6">                                   
+        <a id="signIn" target="_blank" class="btn btn-lg btn-block btn-default"><span id="signInIndex">Sign In</span></a>
+      </div>
+      <div class="col-sm-6 col-xs-6">
+        <button type="submit" name="login" class="btn btn-lg btn-block btn-success"><span id="loginIndex">Login</span></button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<div class="loading">
+  <center>
+    <img src="img/loading.gif" width="90%" />
+  </center>
+</div>
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvPlbuWOR6SN6vVYs1Ss_9Lv4RuUGuxEE"></script>
+<script src="cordova.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jasny-bootstrap.min.js"></script>
+<script src="js/indexAppA.js"></script>
+
+<script>
+  if(usuario != '') {
+    document.location.href= "map.html";
+  } 
+</script>
+
+</body>
+
+</html>
